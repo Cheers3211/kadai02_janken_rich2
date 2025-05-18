@@ -1,0 +1,102 @@
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: center;
+  background: #fef9e7;
+  padding: 40px;
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+
+    .hand-icon {
+      width: 70px;
+    }
+
+    .hand {
+      padding: 8px;
+    }
+
+    #timer {
+      font-size: 20px;
+    }
+
+    .result-area p,
+    .status-area p {
+      font-size: 16px;
+    }
+
+    #retry {
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+    
+  }
+
+}
+
+.container {
+  background: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.status-area, .result-area {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+#timer {
+  font-size: 24px;
+  color: #e60033;
+  font-weight: bold;
+}
+
+.hand {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hand-icon {
+  width: 100px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.hand:hover .hand-icon {
+  transform: scale(1.1);
+}
+
+
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3366cc;
+  margin-top: 10px;
+}
+#retry {
+  font-size: 18px;
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+#retry:hover {
+  background-color: #0077cc;
+}

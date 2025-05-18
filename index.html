@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>脳トレじゃんけんタイムバトル</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <script src="script.js" defer></script>
+
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>脳トレじゃんけんやるよー</h1>
+
+    <div class="status-area">
+      <p id="instruction">指令：勝つのだぞー！</p>
+      <p id="enemy-hand">相手の手：？</p>
+      <p id="timer">タイマー：3</p>
+    </div>
+
+    <div class="choice-area">
+      <button class="hand" data-hand="グー">
+        <img src="img/gu.png" alt="グー" class="hand-icon">
+      </button>
+      <button class="hand" data-hand="チョキ">
+        <img src="img/choki.png" alt="チョキ" class="hand-icon">
+      </button>
+      <button class="hand" data-hand="パー">
+        <img src="img/pa.png" alt="パー" class="hand-icon">
+      </button>
+    </div>
+
+
+    <div class="result-area">
+      <p id="your-hand">あなたの手：？</p>
+      <p id="result">結果：？</p>
+      <p id="score">正解数：0</p>
+    </div>
+    <button id="retry" style="display: none;">もう一度あそぶ</button>
+  </div>
+</body>
+</html>
